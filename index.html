@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Initial Animated Letter Screen -->
+  <div class="letter-envelope" id="envelope">
+    <div class="envelope-front"></div>
+    <div class="envelope-back"></div>
+    <div class="envelope-flap"></div>
+    <div class="envelope-content">
+      <p>Click to Open Your Birthday Surprise!</p>
+    </div>
+  </div>
+
+  <!-- Paper Blast Canvas -->
+  <canvas id="paperBlastCanvas" style="display: none;"></canvas>
+
+  <!-- Main Content -->
+  <div class="main-content" id="mainContent" style="display: none;">
+    <canvas id="heartCanvas"></canvas>
+
+    <div class="message" id="wishText">
+      💖 Happy Birthday 💖
+    </div>
+
+    <button id="magicBtn" style="display: none;">Click to See More Magic</button>
+
+    <div class="image-container" id="imageContainer">
+      <img id="currentImage" src="" alt="birthday" />
+    </div>
+
+    <div class="letter" id="loveLetter">
+      <div>
+        <h1>Dear Love,</h1>
+        <p>
+          On this special day, I just want to say how much you mean to me. You are not just my partner, you are my world.
+          Every moment with you is a blessing and a memory I cherish. I hope your birthday is filled with laughter, love, and joy—just like the joy you bring into my life.
+        </p>
+        <p>
+          I love you more than words can say. Happy Birthday 💕
+        </p>
+      </div>
+    </div>
+
+    <audio id="birthdayMusic" autoplay loop>
+      <source src="/mp3/birthday.mpeg" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="bgMusic" src="/mp3/song.mpeg"></audio>
+    <audio id="voiceNote" src="/mp3/birthday.mpeg"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
